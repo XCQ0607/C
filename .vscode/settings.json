@@ -1,0 +1,5 @@
+{
+    "genieai.enableConversationHistory": true,
+    "genieai.personalizedName": "XCQ",
+    "genieai.openai.apiBaseUrl": "https://api.xcq.us.kg"
+}
