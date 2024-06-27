@@ -4,7 +4,7 @@
 	bare = false
 	logallrefupdates = true
 [remote "origin"]
-	url = https://github.com/XCQ0607/uu.git
+	url = https://github.com/XCQ0607/c.git
 	fetch = +refs/heads/*:refs/remotes/origin/*
 [remote "origim"]
 	url = c.git
