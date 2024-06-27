@@ -66,7 +66,16 @@ bool isGood(int* nums, int numsSize){
     }
 }
 // --------------------------------------------------------------------------
+//2894
 int differenceOfSums(int n, int m) {
   return (n * (n + 1) >> 1) - n / m * (n / m + 1) * m;
 }
 
+// 2600
+int kItemsWithMaximumSum(int numOnes, int numZeros, int numNegOnes, int k){
+    if (k <= numOnes)
+        return k;
+    else if(k <= (numOnes+numZeros))
+        return numOnes;
+    return numOnes-(k-numOnes-numZeros);
+}
