@@ -66,3 +66,7 @@ bool isGood(int* nums, int numsSize){
     }
 }
 // --------------------------------------------------------------------------
+int differenceOfSums(int n, int m) {
+  return (n * (n + 1) >> 1) - n / m * (n / m + 1) * m;
+}
+
