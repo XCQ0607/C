@@ -31,3 +31,21 @@
     
 //     return 0;
 // }
+
+
+//2894
+// int main() {
+//     int n = 10;
+//     int m = 3;
+//     int result = differenceOfSums(n, m);
+//     printf("结果是：%d\n", result);
+//     return 0;
+// }
+
+//2600
+// 调用 kItemsWithMaximumSum 函数并传入 numOnes = 3, numZeros = 2, numNegOnes = 0, k = 2
+int main() {
+    int result = kItemsWithMaximumSum(3, 2, 0, 2);
+    printf("调用 kItemsWithMaximumSum 函数的结果: %d\n", result);
+    return 0;
+}
