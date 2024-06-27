@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cloudide/workspace/C/go.c
+stdio.h
+-
+stdbool.h
+-
+stdlib.h
+-
+
+/cloudide/workspace/C/main.c
+stdio.h
+-
+go.c
+/cloudide/workspace/C/go.c
+
