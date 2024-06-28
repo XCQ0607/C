@@ -79,3 +79,52 @@ int kItemsWithMaximumSum(int numOnes, int numZeros, int numNegOnes, int k){
         return numOnes;
     return numOnes-(k-numOnes-numZeros);
 }
+
+//--------------------------------------------------------------------------
+//2331
+
+bool evaluateTree(struct TreeNode* root){   //传入struct TreeNode类型的root[]       root = [2,1,3,null,null,0,1]
+    if (root == NULL) {
+        return false; // 或者根据具体需求返回其他值
+    }
+    if(root -> val == 1){
+        return true;
+    }
+    else if(root -> val == 0){
+        return false;
+    }
+    bool left = evaluateTree(root -> left);     //函数_1 left == 1->函数_2 val == 1 return true
+    bool right = evaluateTree(root -> right);   //函数_1 right == 3->函数_2 val == 3 return false->函数_3 val== 3  (left == 0->函数_5 val == 0 return false) (right == 1->函数_6 val == 1 return true) return 0
+    if(root -> val == 2){           //函数_1 return 1
+        return left || right;
+    }
+    else if(root -> val == 3){
+        return left && right;
+    }
+    return false;
+}
+
+// -------------------------------------------------------------------------
+//2389
+
+int* answerQueries(int* nums, int numsSize, int* queries, int queriesSize, int* returnSize) {
+    qsort(nums, numsSize, sizeof(int), cmp);
+
+    for(int i = 1; i < numsSize; i++)
+        nums[i] += nums[i - 1];
+
+    for(int i = 0; i < queriesSize; i++){
+        int left = 0, right = numsSize - 1;
+        while(left <= right){
+            int mid = left + (right - left) / 2;
+            if(nums[mid] <= queries[i])
+                left = mid + 1;
+            else
+                right = mid - 1;
+        }
+        queries[i] = left;
+    }
+    *returnSize = queriesSize;
+
+    return queries;
+}
