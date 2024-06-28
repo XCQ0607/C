@@ -128,3 +128,6 @@ int* answerQueries(int* nums, int numsSize, int* queries, int queriesSize, int* 
 
     return queries;
 }
+
+// -------------------------------------------------------------------------
+
