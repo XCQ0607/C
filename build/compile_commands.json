@@ -1,7 +1,8 @@
 [
 {
-  "directory": "/cloudide/workspace/C/build",
-  "command": "/usr/bin/gcc   -g -o CMakeFiles/main.dir/main.c.o -c /cloudide/workspace/C/main.c",
-  "file": "/cloudide/workspace/C/main.c"
+  "directory": "E:/CLionProjects/C/build",
+  "command": "\"D:\\Program Files (x86)\\C\\14.2.0\\mingw64\\bin\\gcc.exe\"   -g -o CMakeFiles\\main.dir\\main.c.obj -c E:\\CLionProjects\\C\\main.c",
+  "file": "E:/CLionProjects/C/main.c",
+  "output": "CMakeFiles/main.dir/main.c.obj"
 }
 ]
