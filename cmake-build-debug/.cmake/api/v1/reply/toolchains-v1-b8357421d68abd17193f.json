@@ -19,7 +19,7 @@
 					"linkFrameworkDirectories" : [],
 					"linkLibraries" : []
 				},
-				"path" : "D:/Program Files (x86)/CLion 2024.3.1.1/bin/mingw/bin/gcc.exe",
+				"path" : "D:/Program Files (x86)/C/14.2.0/mingw64/bin/gcc.exe",
 				"version" : "13.1.0"
 			},
 			"language" : "C",

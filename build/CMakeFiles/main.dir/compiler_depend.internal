@@ -22,8 +22,10 @@ CMakeFiles/main.dir/main.c.obj
  D:/Program Files (x86)/C/14.2.0/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h
  D:/Program Files (x86)/C/14.2.0/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h
  D:/Program Files (x86)/C/14.2.0/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h
+ D:/Program Files (x86)/C/14.2.0/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h
  D:/Program Files (x86)/C/14.2.0/mingw64/x86_64-w64-mingw32/include/stdio.h
  D:/Program Files (x86)/C/14.2.0/mingw64/x86_64-w64-mingw32/include/stdlib.h
+ D:/Program Files (x86)/C/14.2.0/mingw64/x86_64-w64-mingw32/include/string.h
  D:/Program Files (x86)/C/14.2.0/mingw64/x86_64-w64-mingw32/include/swprintf.inl
  D:/Program Files (x86)/C/14.2.0/mingw64/x86_64-w64-mingw32/include/vadefs.h
  E:/CLionProjects/C/go.c

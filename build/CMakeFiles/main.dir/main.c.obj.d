@@ -22,4 +22,6 @@ CMakeFiles/main.dir/main.c.obj: E:\CLionProjects\C\main.c \
  D:/Program\ Files\ (x86)/C/14.2.0/mingw64/x86_64-w64-mingw32/include/malloc.h \
  D:/Program\ Files\ (x86)/C/14.2.0/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
  D:/Program\ Files\ (x86)/C/14.2.0/mingw64/x86_64-w64-mingw32/include/errno.h \
- D:/Program\ Files\ (x86)/C/14.2.0/mingw64/x86_64-w64-mingw32/include/math.h
+ D:/Program\ Files\ (x86)/C/14.2.0/mingw64/x86_64-w64-mingw32/include/math.h \
+ D:/Program\ Files\ (x86)/C/14.2.0/mingw64/x86_64-w64-mingw32/include/string.h \
+ D:/Program\ Files\ (x86)/C/14.2.0/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h

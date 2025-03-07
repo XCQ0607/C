@@ -242,30 +242,117 @@
 //     return 0;
 // }
 //--------------------------
+//221. 最大正方形
+// int main() {
+//     //创建一个矩阵
+//     int matrixSize = 4;
+//     int matrixColSize[] = {5,5,5,5};
+//     int** matrix = (int**)malloc(matrixSize*sizeof(int*));
+//     for (int i = 0;i<matrixSize;i++){
+//         matrix[i] = (int*)malloc(matrixColSize[i]*sizeof(int));
+//     }
+
+
+//     int tempMatrix[4][5] = {
+//         {'1', '0', '1', '0', '0'},
+//         {'1', '0', '1', '1', '1'},
+//         {'1', '1', '1', '1', '1'},
+//         {'1', '0', '0', '1', '0'}
+//     };
+//     for (int i = 0; i < matrixSize; i++) {
+//         for (int j = 0; j < matrixColSize[i]; j++) {
+//             matrix[i][j] = tempMatrix[i][j];
+//         }
+//     }
+
+
+//     int result = maximalSquare(matrix, matrixSize, matrixColSize);
+//     printf("最大正方形的面积是：%d\n",result);
+//     return 0;
+// }
+//--------------------------------
+//5. 最长回文子串
+// int main() {
+//     char s[] = "babad";
+//     char* result = longestPalindrome(s);
+//     printf("最长回文子串是：%s\n", result);
+//     free(result); // 释放内存
+
+//     // 测试用例
+//     const char* s1 = "babad";
+//     char* result1 = longestPalindrome(s1);
+//     printf("输入: %s\n输出: %s\n", s1, result1);
+//     free(result1); // 释放内存
+    
+//     const char* s2 = "cbbd";
+//     char* result2 = longestPalindrome(s2);
+//     printf("输入: %s\n输出: %s\n", s2, result2);
+//     free(result2); // 释放内存
+    
+//     return 0;
+// }
+//--------------------------------
+//139. 单词拆分
+// #include <stdio.h> //这个是标准输入输出的库
+// #include <stdlib.h> //这个是动态内存分配的库
+// #include <string.h> //这个是字符串操作的库
+// #include <stdbool.h> //这个是布尔类型的库
+
+// // 声明 wordBreak 函数
+// bool wordBreak(char* s, char** wordDict, int wordDictSize);
+
+// int main() {
+//     // 测试用例1
+//     char* s1 = "leetcode";
+//     char* wordDict1[] = {"leet", "code"};
+//     int wordDictSize1 = 2;
+//     bool result1 = wordBreak(s1, wordDict1, wordDictSize1);
+//     printf("输入: s = \"%s\", wordDict = [\"leet\", \"code\"]\n", s1);
+//     printf("输出: %s\n", result1 ? "true" : "false");
+    
+//     // 测试用例2
+//     char* s2 = "applepenapple";
+//     char* wordDict2[] = {"apple", "pen"};
+//     int wordDictSize2 = 2;
+//     bool result2 = wordBreak(s2, wordDict2, wordDictSize2);
+//     printf("\n输入: s = \"%s\", wordDict = [\"apple\", \"pen\"]\n", s2);
+//     printf("输出: %s\n", result2 ? "true" : "false");
+    
+//     // 测试用例3
+//     char* s3 = "catsandog";
+//     char* wordDict3[] = {"cats", "dog", "sand", "and", "cat"};
+//     int wordDictSize3 = 5;
+//     bool result3 = wordBreak(s3, wordDict3, wordDictSize3);
+//     printf("\n输入: s = \"%s\", wordDict = [\"cats\", \"dog\", \"sand\", \"and\", \"cat\"]\n", s3);
+//     printf("输出: %s\n", result3 ? "true" : "false");
+    
+//     return 0;
+// }
+//--------------------------------
+//516. 最长回文子序列
+// main.c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+// 声明 longestPalindromeSubseq 函数
+int longestPalindromeSubseq(char* s);
+
 int main() {
-    //创建一个矩阵
-    int matrixSize = 4;
-    int matrixColSize[] = {5,5,5,5};
-    int** matrix = (int**)malloc(matrixSize*sizeof(int*));
-    for (int i = 0;i<matrixSize;i++){
-        matrix[i] = (int*)malloc(matrixColSize[i]*sizeof(int));
-    }
-
-
-    int tempMatrix[4][5] = {
-        {'1', '0', '1', '0', '0'},
-        {'1', '0', '1', '1', '1'},
-        {'1', '1', '1', '1', '1'},
-        {'1', '0', '0', '1', '0'}
-    };
-    for (int i = 0; i < matrixSize; i++) {
-        for (int j = 0; j < matrixColSize[i]; j++) {
-            matrix[i][j] = tempMatrix[i][j];
-        }
-    }
-
-
-    int result = maximalSquare(matrix, matrixSize, matrixColSize);
-    printf("最大正方形的面积是：%d\n",result);
+    // 测试用例1
+    char* s1 = "bbbab";
+    int result1 = longestPalindromeSubseq(s1);
+    printf("输入: s = \"%s\"\n", s1);
+    printf("输出: %d\n", result1);
+    printf("解释: 一个可能的最长回文子序列为 \"bbbb\"。\n");
+    
+    // 测试用例2
+    char* s2 = "cbbd";
+    int result2 = longestPalindromeSubseq(s2);
+    printf("\n输入: s = \"%s\"\n", s2);
+    printf("输出: %d\n", result2);
+    printf("解释: 一个可能的最长回文子序列为 \"bb\"。\n");
+    
     return 0;
 }
+

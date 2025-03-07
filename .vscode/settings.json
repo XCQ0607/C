@@ -14,6 +14,7 @@
         "random": "c",
         "format": "c",
         "limits": "c",
-        "numeric": "c"
+        "numeric": "c",
+        "stdbool.h": "c"
     },
 }
